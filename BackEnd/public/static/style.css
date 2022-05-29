@@ -1,0 +1,12 @@
+body {
+    background-color: #000040ff !important;
+    
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+div {
+    margin: auto;
+  }

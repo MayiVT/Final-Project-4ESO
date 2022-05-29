@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </head>
+    <body>    
+        <% for (i = 0; i < number; i++) { %>
+            <div class="card align-content-center" style="width: 18rem;">
+                <img src="<%= post.post[i].post %>" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title"><%= post.post[i].user %></h4>
+                    <p class="card-text"><%= post.post[i].text %></p>    
+                    <hr class="solid">
+                    <p class="card-text">Post Date: <%= post.post[i].date %></p>
+                </div>
+            </div>
+            <br>
+            <br>
+        <% } %>
+    </body>
+</html>
